@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0507DC2F2620BDD300BE7132 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0507DC2E2620BDD300BE7132 /* ContentView.swift */; };
+		0507DC312620BDD500BE7132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0507DC302620BDD500BE7132 /* Assets.xcassets */; };
+		0507DC342620BDD500BE7132 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0507DC332620BDD500BE7132 /* Preview Assets.xcassets */; };
+		0507DC3F2620BDD500BE7132 /* V2SleepAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0507DC3E2620BDD500BE7132 /* V2SleepAppTests.swift */; };
+		0507DC4A2620BDD500BE7132 /* V2SleepAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0507DC492620BDD500BE7132 /* V2SleepAppUITests.swift */; };
+		0507DC5C2620BE7F00BE7132 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0507DC5B2620BE7F00BE7132 /* AudioKit */; };
+		0507DC622620C0CB00BE7132 /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0507DC612620C0CB00BE7132 /* AudioKitUI */; };
+		0507DC672620C49F00BE7132 /* proto1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0507DC662620C49F00BE7132 /* proto1.swift */; };
+		0507DC7426212BD000BE7132 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0507DC7326212BD000BE7132 /* InputView.swift */; };
+		05599DA6262527100017D48C /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05599DA5262527100017D48C /* WelcomeView.swift */; };
+		057B95F1262DC8E900BC6F43 /* V2SleepAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057B95F0262DC8E900BC6F43 /* V2SleepAppApp.swift */; };
+		05A782FE26239EC2008D8B83 /* processReadings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A782FD26239EC2008D8B83 /* processReadings.swift */; };
+		05A783032623AF50008D8B83 /* GCHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A783022623AF50008D8B83 /* GCHelper.swift */; };
+		05A783252623E891008D8B83 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 05A783242623E891008D8B83 /* SwiftUICharts */; };
+		05A783352623E91B008D8B83 /* sleepDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A783342623E91B008D8B83 /* sleepDisplayView.swift */; };
+		05A7833A2623EA98008D8B83 /* ChartsStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A783392623EA98008D8B83 /* ChartsStyle.swift */; };
+		05A7833F26240357008D8B83 /* loadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A7833E26240357008D8B83 /* loadingView.swift */; };
+		05A7834426246CE5008D8B83 /* NodeOutputPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A7834326246CE5008D8B83 /* NodeOutputPlot.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0507DC3B2620BDD500BE7132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0507DC212620BDD300BE7132 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0507DC282620BDD300BE7132;
+			remoteInfo = V2SleepApp;
+		};
+		0507DC462620BDD500BE7132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0507DC212620BDD300BE7132 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0507DC282620BDD300BE7132;
+			remoteInfo = V2SleepApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0507DC292620BDD300BE7132 /* V2SleepApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = V2SleepApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0507DC2E2620BDD300BE7132 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0507DC302620BDD500BE7132 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0507DC332620BDD500BE7132 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0507DC352620BDD500BE7132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0507DC3A2620BDD500BE7132 /* V2SleepAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = V2SleepAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0507DC3E2620BDD500BE7132 /* V2SleepAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2SleepAppTests.swift; sourceTree = "<group>"; };
+		0507DC402620BDD500BE7132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0507DC452620BDD500BE7132 /* V2SleepAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = V2SleepAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0507DC492620BDD500BE7132 /* V2SleepAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2SleepAppUITests.swift; sourceTree = "<group>"; };
+		0507DC4B2620BDD500BE7132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0507DC662620C49F00BE7132 /* proto1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proto1.swift; sourceTree = "<group>"; };
+		0507DC7326212BD000BE7132 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		05599DA5262527100017D48C /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		057B95F0262DC8E900BC6F43 /* V2SleepAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2SleepAppApp.swift; sourceTree = "<group>"; };
+		05A782FD26239EC2008D8B83 /* processReadings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = processReadings.swift; sourceTree = "<group>"; };
+		05A783022623AF50008D8B83 /* GCHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCHelper.swift; sourceTree = "<group>"; };
+		05A783342623E91B008D8B83 /* sleepDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sleepDisplayView.swift; sourceTree = "<group>"; };
+		05A783392623EA98008D8B83 /* ChartsStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsStyle.swift; sourceTree = "<group>"; };
+		05A7833E26240357008D8B83 /* loadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadingView.swift; sourceTree = "<group>"; };
+		05A7834326246CE5008D8B83 /* NodeOutputPlot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeOutputPlot.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0507DC262620BDD300BE7132 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05A783252623E891008D8B83 /* SwiftUICharts in Frameworks */,
+				0507DC622620C0CB00BE7132 /* AudioKitUI in Frameworks */,
+				0507DC5C2620BE7F00BE7132 /* AudioKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0507DC372620BDD500BE7132 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0507DC422620BDD500BE7132 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0507DC202620BDD300BE7132 = {
+			isa = PBXGroup;
+			children = (
+				0507DC2B2620BDD300BE7132 /* V2SleepApp */,
+				0507DC3D2620BDD500BE7132 /* V2SleepAppTests */,
+				0507DC482620BDD500BE7132 /* V2SleepAppUITests */,
+				0507DC2A2620BDD300BE7132 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0507DC2A2620BDD300BE7132 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0507DC292620BDD300BE7132 /* V2SleepApp.app */,
+				0507DC3A2620BDD500BE7132 /* V2SleepAppTests.xctest */,
+				0507DC452620BDD500BE7132 /* V2SleepAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0507DC2B2620BDD300BE7132 /* V2SleepApp */ = {
+			isa = PBXGroup;
+			children = (
+				0507DC7326212BD000BE7132 /* InputView.swift */,
+				05599DA5262527100017D48C /* WelcomeView.swift */,
+				05A7833E26240357008D8B83 /* loadingView.swift */,
+				05A782FD26239EC2008D8B83 /* processReadings.swift */,
+				05A783022623AF50008D8B83 /* GCHelper.swift */,
+				0507DC662620C49F00BE7132 /* proto1.swift */,
+				05A783342623E91B008D8B83 /* sleepDisplayView.swift */,
+				05A7834326246CE5008D8B83 /* NodeOutputPlot.swift */,
+				057B95F0262DC8E900BC6F43 /* V2SleepAppApp.swift */,
+				05A783392623EA98008D8B83 /* ChartsStyle.swift */,
+				0507DC2E2620BDD300BE7132 /* ContentView.swift */,
+				0507DC302620BDD500BE7132 /* Assets.xcassets */,
+				0507DC352620BDD500BE7132 /* Info.plist */,
+				0507DC322620BDD500BE7132 /* Preview Content */,
+			);
+			path = V2SleepApp;
+			sourceTree = "<group>";
+		};
+		0507DC322620BDD500BE7132 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0507DC332620BDD500BE7132 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0507DC3D2620BDD500BE7132 /* V2SleepAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				0507DC3E2620BDD500BE7132 /* V2SleepAppTests.swift */,
+				0507DC402620BDD500BE7132 /* Info.plist */,
+			);
+			path = V2SleepAppTests;
+			sourceTree = "<group>";
+		};
+		0507DC482620BDD500BE7132 /* V2SleepAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0507DC492620BDD500BE7132 /* V2SleepAppUITests.swift */,
+				0507DC4B2620BDD500BE7132 /* Info.plist */,
+			);
+			path = V2SleepAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0507DC282620BDD300BE7132 /* V2SleepApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0507DC4E2620BDD500BE7132 /* Build configuration list for PBXNativeTarget "V2SleepApp" */;
+			buildPhases = (
+				0507DC252620BDD300BE7132 /* Sources */,
+				0507DC262620BDD300BE7132 /* Frameworks */,
+				0507DC272620BDD300BE7132 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = V2SleepApp;
+			packageProductDependencies = (
+				0507DC5B2620BE7F00BE7132 /* AudioKit */,
+				0507DC612620C0CB00BE7132 /* AudioKitUI */,
+				05A783242623E891008D8B83 /* SwiftUICharts */,
+			);
+			productName = V2SleepApp;
+			productReference = 0507DC292620BDD300BE7132 /* V2SleepApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0507DC392620BDD500BE7132 /* V2SleepAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0507DC512620BDD500BE7132 /* Build configuration list for PBXNativeTarget "V2SleepAppTests" */;
+			buildPhases = (
+				0507DC362620BDD500BE7132 /* Sources */,
+				0507DC372620BDD500BE7132 /* Frameworks */,
+				0507DC382620BDD500BE7132 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0507DC3C2620BDD500BE7132 /* PBXTargetDependency */,
+			);
+			name = V2SleepAppTests;
+			productName = V2SleepAppTests;
+			productReference = 0507DC3A2620BDD500BE7132 /* V2SleepAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0507DC442620BDD500BE7132 /* V2SleepAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0507DC542620BDD500BE7132 /* Build configuration list for PBXNativeTarget "V2SleepAppUITests" */;
+			buildPhases = (
+				0507DC412620BDD500BE7132 /* Sources */,
+				0507DC422620BDD500BE7132 /* Frameworks */,
+				0507DC432620BDD500BE7132 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0507DC472620BDD500BE7132 /* PBXTargetDependency */,
+			);
+			name = V2SleepAppUITests;
+			productName = V2SleepAppUITests;
+			productReference = 0507DC452620BDD500BE7132 /* V2SleepAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0507DC212620BDD300BE7132 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					0507DC282620BDD300BE7132 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					0507DC392620BDD500BE7132 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 0507DC282620BDD300BE7132;
+					};
+					0507DC442620BDD500BE7132 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 0507DC282620BDD300BE7132;
+					};
+				};
+			};
+			buildConfigurationList = 0507DC242620BDD300BE7132 /* Build configuration list for PBXProject "V2SleepApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0507DC202620BDD300BE7132;
+			packageReferences = (
+				0507DC5A2620BE7F00BE7132 /* XCRemoteSwiftPackageReference "AudioKit" */,
+				0507DC602620C0CB00BE7132 /* XCRemoteSwiftPackageReference "AudioKitUI" */,
+				05A783232623E891008D8B83 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
+			productRefGroup = 0507DC2A2620BDD300BE7132 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0507DC282620BDD300BE7132 /* V2SleepApp */,
+				0507DC392620BDD500BE7132 /* V2SleepAppTests */,
+				0507DC442620BDD500BE7132 /* V2SleepAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0507DC272620BDD300BE7132 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0507DC342620BDD500BE7132 /* Preview Assets.xcassets in Resources */,
+				0507DC312620BDD500BE7132 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0507DC382620BDD500BE7132 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0507DC432620BDD500BE7132 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0507DC252620BDD300BE7132 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05A7833A2623EA98008D8B83 /* ChartsStyle.swift in Sources */,
+				05599DA6262527100017D48C /* WelcomeView.swift in Sources */,
+				05A783032623AF50008D8B83 /* GCHelper.swift in Sources */,
+				0507DC2F2620BDD300BE7132 /* ContentView.swift in Sources */,
+				05A7834426246CE5008D8B83 /* NodeOutputPlot.swift in Sources */,
+				05A7833F26240357008D8B83 /* loadingView.swift in Sources */,
+				0507DC7426212BD000BE7132 /* InputView.swift in Sources */,
+				057B95F1262DC8E900BC6F43 /* V2SleepAppApp.swift in Sources */,
+				05A783352623E91B008D8B83 /* sleepDisplayView.swift in Sources */,
+				0507DC672620C49F00BE7132 /* proto1.swift in Sources */,
+				05A782FE26239EC2008D8B83 /* processReadings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0507DC362620BDD500BE7132 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0507DC3F2620BDD500BE7132 /* V2SleepAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0507DC412620BDD500BE7132 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0507DC4A2620BDD500BE7132 /* V2SleepAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0507DC3C2620BDD500BE7132 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0507DC282620BDD300BE7132 /* V2SleepApp */;
+			targetProxy = 0507DC3B2620BDD500BE7132 /* PBXContainerItemProxy */;
+		};
+		0507DC472620BDD500BE7132 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0507DC282620BDD300BE7132 /* V2SleepApp */;
+			targetProxy = 0507DC462620BDD500BE7132 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0507DC4C2620BDD500BE7132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0507DC4D2620BDD500BE7132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0507DC4F2620BDD500BE7132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"V2SleepApp/Preview Content\"";
+				DEVELOPMENT_TEAM = HL3L996Z64;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = V2SleepApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gcass.V2SleepApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0507DC502620BDD500BE7132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"V2SleepApp/Preview Content\"";
+				DEVELOPMENT_TEAM = HL3L996Z64;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = V2SleepApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gcass.V2SleepApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0507DC522620BDD500BE7132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL3L996Z64;
+				INFOPLIST_FILE = V2SleepAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gcass.V2SleepAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/V2SleepApp.app/V2SleepApp";
+			};
+			name = Debug;
+		};
+		0507DC532620BDD500BE7132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL3L996Z64;
+				INFOPLIST_FILE = V2SleepAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gcass.V2SleepAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/V2SleepApp.app/V2SleepApp";
+			};
+			name = Release;
+		};
+		0507DC552620BDD500BE7132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL3L996Z64;
+				INFOPLIST_FILE = V2SleepAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gcass.V2SleepAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = V2SleepApp;
+			};
+			name = Debug;
+		};
+		0507DC562620BDD500BE7132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL3L996Z64;
+				INFOPLIST_FILE = V2SleepAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gcass.V2SleepAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = V2SleepApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0507DC242620BDD300BE7132 /* Build configuration list for PBXProject "V2SleepApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0507DC4C2620BDD500BE7132 /* Debug */,
+				0507DC4D2620BDD500BE7132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0507DC4E2620BDD500BE7132 /* Build configuration list for PBXNativeTarget "V2SleepApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0507DC4F2620BDD500BE7132 /* Debug */,
+				0507DC502620BDD500BE7132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0507DC512620BDD500BE7132 /* Build configuration list for PBXNativeTarget "V2SleepAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0507DC522620BDD500BE7132 /* Debug */,
+				0507DC532620BDD500BE7132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0507DC542620BDD500BE7132 /* Build configuration list for PBXNativeTarget "V2SleepAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0507DC552620BDD500BE7132 /* Debug */,
+				0507DC562620BDD500BE7132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0507DC5A2620BE7F00BE7132 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit";
+			requirement = {
+				branch = "v5-main";
+				kind = branch;
+			};
+		};
+		0507DC602620C0CB00BE7132 /* XCRemoteSwiftPackageReference "AudioKitUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKitUI";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		05A783232623E891008D8B83 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0507DC5B2620BE7F00BE7132 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0507DC5A2620BE7F00BE7132 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+		0507DC612620C0CB00BE7132 /* AudioKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0507DC602620C0CB00BE7132 /* XCRemoteSwiftPackageReference "AudioKitUI" */;
+			productName = AudioKitUI;
+		};
+		05A783242623E891008D8B83 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05A783232623E891008D8B83 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0507DC212620BDD300BE7132 /* Project object */;
+}
